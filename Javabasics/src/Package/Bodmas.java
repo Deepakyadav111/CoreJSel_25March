@@ -26,22 +26,23 @@ public class Bodmas {
     {
     	int d;
     	d=d1/d2;
-    System.out.println("The Final result  of (((((10+2)+2)-2)*2)/2) is "+d);
+    //System.out.println("The Final result  of (((((10+2)+2)-2)*2)/2) is "+d);
+    System.out.println("The Final result  of (((((10*2)-2)+2)-2)/2)  is "+d);
     }
     public static void main(String[] args) {
     	       Bodmas ref_var=new Bodmas();
-    	        int sumresult=ref_var.sum(10,2);
-    	       int sumresult1=ref_var.sum(sumresult, 2);
-        int sustractionresult=ref_var.subs(sumresult1,2);
-     int multiplicationresult=ref_var.multi(sustractionresult,2);
-            ref_var.div(multiplicationresult,2);
+    	     //   int sumresult=ref_var.sum(10,2);
+    	    //   int sumresult1=ref_var.sum(sumresult, 2);
+      //  int sustractionresult=ref_var.subs(sumresult1,2);
+    // int multiplicationresult=ref_var.multi(sustractionresult,2);
+     //       ref_var.div(multiplicationresult,2);
     
     
-   // int multiplicationresult1=ref_var.multi(10,2);
-   // int sustractionresult1=ref_var.subs(multiplicationresult1,2);
-   // int sumresult2=ref_var.sum(sustractionresult1,2);
-   // int sustractionresult2=ref_var.subs(sumresult2,2);
-   // int Finalresult1 =ref_var.div(sustractionresult2, 2);
-   // System.out.println("The Final result  of (((((10*2)-2)+2)-2)/2)  is "+Finalresult1);
+    int multiplicationresult1=ref_var.multi(10,2);
+   int sustractionresult2=ref_var.subs(multiplicationresult1,2);
+   int sumresult2=ref_var.sum(sustractionresult2,2);
+   int sustractionresult3=ref_var.subs(sumresult2,2);
+    ref_var.div(sustractionresult3, 2);
+   
 	}
 }

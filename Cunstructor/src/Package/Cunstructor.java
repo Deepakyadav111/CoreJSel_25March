@@ -10,6 +10,7 @@ public class Cunstructor {
 	
 	public Cunstructor(int a)
 	{	
+		this(3,5);
 		System.out.println("This is one Prameterized Cunstrutor");
 	}
 	public Cunstructor(int a,int b)
@@ -19,8 +20,8 @@ public class Cunstructor {
 	public static void main(String[] args) {
 		
 		Cunstructor obc=new Cunstructor();
-		Cunstructor xyz=new Cunstructor(22);
-		Cunstructor abc=new Cunstructor(225,121);
+	//	Cunstructor xyz=new Cunstructor(22);
+		//Cunstructor abc=new Cunstructor(225,121);
 		
 
 	}
